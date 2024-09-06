@@ -74,7 +74,7 @@ svg{
     z-index:2;
     display:grid;
     grid-template-columns:70% 20%;
-    grid-template-rows:50% 50%;
+    grid-template-rows:35% 65%;
 }
 
 .search-container{
@@ -124,17 +124,47 @@ svg{
 .top-right{
     grid-column:2;
     grid-row:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+
+.top-right .profile{
+    height:50px;
+    width:50px;
+}
+
+.top-right p{
+    font-weight:800;
 }
 
 .actions{
     grid-column:2;
     grid-row:2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:32px;
 }
 
 button{
-    border-radius:4px;
+    border-radius:20px;
     border:none;
     background-color:#16a34a;
+    width:200px;
+    height:35px;
+    padding:10px 30px;
+    text-align: center;
+    font-weight:600;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: #86efac;
+    color:#3f3f46;
 }
 
 .top-right{
